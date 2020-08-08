@@ -44,7 +44,7 @@ methods.forEach( method => {
     switch (method) {
       case 'push':
       case 'unshift':
-        console.log(12)
+        // console.log(12)
         inserted = args
         break
       
