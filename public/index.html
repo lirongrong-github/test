@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="app"></div>
+
+  <script src="/dist/umd/vue.js"></script>
+  <script>
+
+    let vm = new Vue({
+
+      el: '#app',
+      data() {
+
+        // adress
+        // return {
+
+        //   name: 'lili',
+        //   age: 20,
+        //   sex: 'man',
+        //   adreess: {
+
+        //     name: 'susu',
+        //     number: 120
+
+        //   }
+
+        // }
+
+        return {
+
+          person: [ { a: '1' }, { name: "lili", age: 30 } ],
+          name: [{a:1},{b:2}]
+
+        }
+
+      },
+      computed() {},
+      watch() {}
+
+    })
+
+    vm._data.name.push({name: 'susu'})
+    console.log( vm._data )
+
+  </script>
+</body>
+</html>
